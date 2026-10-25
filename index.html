@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madina Sattaraliyeva — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="splash" id="splash"><span id="sw">Merhaba</span></div>
+<div class="bar" id="bar"></div>
+<div class="glow" id="glow"></div>
+
+<header class="nav">
+  <a href="#top" class="logo">M<span>.</span>S</a>
+  <nav>
+    <a href="#about" data-i18n="nav_about"></a>
+    <a href="#interests" data-i18n="nav_int"></a>
+    <a href="#gallery" data-i18n="nav_gal"></a>
+    <a href="#draw" data-i18n="nav_draw"></a>
+    <a href="#turk" data-i18n="nav_tr"></a>
+    <a href="#contact" data-i18n="nav_contact"></a>
+  </nav>
+  <div class="tools">
+    <div class="langs"><button data-l="uz">UZ</button><button data-l="en">EN</button><button data-l="tr">TR</button></div>
+    <button id="themeBtn" aria-label="Theme">☾</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="hand" data-i18n="hi"></p>
+    <h1><span>Madina</span><span class="outline">Sattaraliyeva</span></h1>
+    <p class="role"><span data-i18n="iam"></span> <b id="role"></b></p>
+    <p class="lead" data-i18n="lead"></p>
+    <div class="eq" id="eq" aria-hidden="true"></div>
+    <a href="#draw" class="btn" data-i18n="cta"></a>
+  </div>
+  <div class="photo-wrap">
+    <div class="ring"></div>
+    <div class="photo">
+      <img src="images/madina.jpg" alt="Madina Sattaraliyeva" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+      <div class="ph">MS</div>
+    </div>
+    <span class="sticker s1">🎵</span><span class="sticker s2">✏️</span><span class="sticker s3">🇹🇷</span><span class="sticker s4">{ }</span>
+  </div>
+</section>
+
+<div class="marquee"><div class="track" id="track"></div></div>
+
+<section id="about" class="sec">
+  <h2 data-i18n="about_t"></h2>
+  <p class="big" data-i18n="about_p"></p>
+</section>
+
+<section id="interests" class="sec">
+  <h2 data-i18n="int_t"></h2>
+  <div class="cards">
+    <article class="card c1"><b>🎧</b><h3 data-i18n="m_t"></h3><p data-i18n="m_p"></p></article>
+    <article class="card c2"><b>🎨</b><h3 data-i18n="a_t"></h3><p data-i18n="a_p"></p></article>
+    <article class="card c3"><b>💻</b><h3 data-i18n="d_t"></h3><p data-i18n="d_p"></p></article>
+    <article class="card c4"><b>🌙</b><h3 data-i18n="t_t"></h3><p data-i18n="t_p"></p></article>
+  </div>
+</section>
+
+<section id="gallery" class="sec">
+  <h2 data-i18n="gal_t"></h2>
+  <p class="sub" data-i18n="g_hint"></p>
+  <div class="strip" id="strip">
+    <figure class="snap" data-full="images/photo-balloons.jpg"><img src="images/photo-balloons.jpg" alt="" loading="lazy" style="object-position:50% 60%"><figcaption data-i18n="g1"></figcaption></figure>
+    <figure class="snap" data-full="images/photo-books.jpg"><img src="images/photo-books.jpg" alt="" loading="lazy" style="object-position:50% 40%"><figcaption data-i18n="g2"></figcaption></figure>
+    <figure class="snap" data-full="images/photo-city.jpg"><img src="images/photo-city.jpg" alt="" loading="lazy" style="object-position:30% 80%"><figcaption data-i18n="g3"></figcaption></figure>
+    <figure class="snap" data-full="images/photo-nature.jpg"><img src="images/photo-nature.jpg" alt="" loading="lazy" style="object-position:30% 35%"><figcaption data-i18n="g4"></figcaption></figure>
+    <figure class="snap" data-full="images/photo-hills.jpg"><img src="images/photo-hills.jpg" alt="" loading="lazy" style="object-position:80% 50%"><figcaption data-i18n="g5"></figcaption></figure>
+    <figure class="snap" data-full="images/photo-carousel.jpg"><img src="images/photo-carousel.jpg" alt="" loading="lazy" style="object-position:50% 40%"><figcaption data-i18n="g6"></figcaption></figure>
+    <figure class="snap" data-full="images/photo-friends.jpg"><img src="images/photo-friends.jpg" alt="" loading="lazy" style="object-position:50% 55%"><figcaption data-i18n="g7"></figcaption></figure>
+    <figure class="snap" data-full="images/photo-pillar.jpg"><img src="images/photo-pillar.jpg" alt="" loading="lazy" style="object-position:50% 55%"><figcaption data-i18n="g8"></figcaption></figure>
+    <figure class="snap" data-full="images/photo-roses.jpg"><img src="images/photo-roses.jpg" alt="" loading="lazy" style="object-position:50% 30%"><figcaption data-i18n="g9"></figcaption></figure>
+  </div>
+</section>
+
+<section id="draw" class="sec">
+  <h2 data-i18n="draw_t"></h2>
+  <p class="sub" data-i18n="draw_p"></p>
+  <div class="board">
+    <canvas id="cv" width="900" height="380"></canvas>
+    <div class="palette" id="palette"></div>
+    <button class="btn small" id="clear" data-i18n="clear"></button>
+  </div>
+</section>
+
+<section id="piano" class="sec">
+  <h2 data-i18n="p_t"></h2>
+  <p class="sub" data-i18n="p_s"></p>
+  <div class="keys" id="keys"></div>
+</section>
+
+<section id="turk" class="sec">
+  <h2 data-i18n="tr_t"></h2>
+  <p class="sub" data-i18n="tr_s"></p>
+  <div class="words" id="words"></div>
+  <button class="btn small" id="trRand" data-i18n="rand"></button>
+</section>
+
+<section id="contact" class="sec contact">
+  <h2 data-i18n="c_t"></h2>
+  <p class="big" data-i18n="c_p"></p>
+  <div class="links">
+    <a href="mailto:your@email.com" class="btn">Email</a>
+    <a href="https://instagram.com/" class="btn ghost" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://t.me/" class="btn ghost" target="_blank" rel="noopener">Telegram</a>
+    <a href="https://github.com/" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+</main>
+
+<div class="lb" id="lb"><img alt=""></div>
+<footer>© 2026 Madina Sattaraliyeva</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
